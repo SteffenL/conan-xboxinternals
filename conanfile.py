@@ -44,4 +44,4 @@ class XboxInternalsConan(ConanFile):
             self.cpp_info.defines += ["XBOXINTERNALS_STATIC"]
 
     def requirements(self):
-        self.requires("Botan/[>=2.8]@sl/testing")
+        self.requires("Botan/[>=2.8]@langnes/testing")
