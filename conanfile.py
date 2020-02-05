@@ -3,7 +3,7 @@ from conans import ConanFile, CMake, tools
 
 class XboxInternalsConan(ConanFile):
     name = "XboxInternals"
-    version = "0.1.0"
+    version = "0.1.1"
     license = "GPL-3.0-only"
     url = "https://github.com/SteffenL/conan-xboxinternals"
     description = "Xbox Internals library from Velocity"
@@ -44,4 +44,4 @@ class XboxInternalsConan(ConanFile):
             self.cpp_info.defines += ["XBOXINTERNALS_STATIC"]
 
     def requirements(self):
-        self.requires("Botan/[>=2.8]@langnes/testing")
+        self.requires("botan/[>=2.12.1]")
